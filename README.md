@@ -6,5 +6,5 @@
 4. Run `get_reports.sql` in BigQuery (will get reports filed through Firefox broken website reporter where the pref is false)
 5. Save result to `reports.csv`
 6. Run `python3 check-h1-use-counter.py` (will open URLs and check if they hit the "sectioning_h1_with_no_font_size_or_margins" use counter)
-7. Close Firefox after all tabs are loaded
+7. Wait until all URLs are processed, or stop with Ctrl+C.
 8. Manually check compat impact of URLs in `matched_reports.csv`
